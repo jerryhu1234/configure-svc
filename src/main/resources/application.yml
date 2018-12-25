@@ -8,7 +8,7 @@ spring:
       name: root
       password: booszy
   application:
-    name: sc-config
+    name: scconfig
   cloud:
     config:
       server:
@@ -22,5 +22,5 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-    appname: sc-config
+    appname: scconfig
 
