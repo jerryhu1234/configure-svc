@@ -1,24 +1,5 @@
 server:
-<<<<<<< HEAD
-  port: 8761
-eureka:
-  datacenter: trmap
-  environment: product
-  server:
-      # 关闭自我保护
-      enable-self-preservation: false
-      # 清理服务器
-      eviction-interval-timer-in-ms: 5000
-  client:
-    healthcheck:
-      enabled: true
-    service-url:
-      defaultZone: http://root:booszy@weishi.ty.jzyoga.cn:8761/eureka/
-    register-with-eureka: false
-    fetch-registry: false
-=======
   port: 8800
->>>>>>> Commit
 spring:
   security:
     basic:
@@ -26,10 +7,8 @@ spring:
     user:
       name: root
       password: booszy
-<<<<<<< HEAD
-=======
   application:
-    name: sc-config-server
+    name: scconfig
   cloud:
     config:
       server:
@@ -43,5 +22,4 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-    appname: sc-config-server
->>>>>>> Commit
+    appname: scconfig
