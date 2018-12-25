@@ -24,6 +24,11 @@ repositories {
 	maven { url "https://repo.spring.io/milestone" }
 }
 
+jar{
+        manifest {attributes 'Main-Class':'cn.kry.scconfig.ScConfigApplication'}
+}
+
+
 ext['springCloudVersion'] = 'Greenwich.RC2'
 
 dependencies {
